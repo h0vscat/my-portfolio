@@ -1,0 +1,160 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header */
+
+.header {
+    display: flex;
+}
+
+.header-logo {
+    width: 30%;
+}
+
+.header-info {
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: right;
+    width: 70%;
+}
+
+.header-img {
+    max-width: 50px;
+}
+
+.header-name {
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 7vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.header-subinfo {
+    color: gray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3vw;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+
+/* navgation */
+
+.topnav {
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 10px;
+    max-width: 1000px;
+}
+
+.topnav a {
+    float: center;
+    color: black;
+    text-align: center;
+    padding: 7px 5vw;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: gray;
+}
+
+.topnav a.active {
+    color: orange;
+}
+
+
+/* main */
+
+.content-hero-img {
+    height: auto;
+    max-width: 100%;
+}
+
+.featured {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.featured-items {
+    margin: auto;
+}
+
+.featured-text {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.featured-img {
+    height: auto;
+    max-width: 60%;
+}
+
+.featured-img-name {
+    font-size: 3vw;
+}
+
+.featured-img-info {
+    font-size: 1.5vw;
+}
+
+@media screen and (min-width: 730px) {
+    .header {
+        margin: auto;
+        max-width: 1000px;
+    }
+    .header-name {
+        font-size: 2.5em;
+    }
+    .header-subinfo {
+        font-size: 1.2em;
+    }
+    .hero-item {
+        margin: auto;
+        max-width: 1000px;
+    }
+    .featured-text {
+        margin-bottom: 10px;
+    }
+    .featured-img {
+        height: auto;
+        max-width: 100%;
+    }
+    .featured-img-name {
+        font-size: 1.2em;
+    }
+    .featured-img-info {
+        font-size: 1em;
+    }
+    .featured-items {
+        display: flex;
+        margin: auto;
+        max-width: 1000px;
+    }
+    .featured-item {
+        width: 80%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 10px 15px 15px 0;
+    }
+    .featured-item:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .topnav a {
+        padding: 7px 47px;
+    }
+}
